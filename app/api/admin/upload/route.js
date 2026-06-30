@@ -41,7 +41,12 @@ export async function POST(request) {
     }
 
     const fileExt = image.name?.split('.').pop() || 'jpg';
-    const safeCategory = encodeURIComponent(category);
+    const categoryFolderMap = {
+      'ستائر': 'curtains',
+      'ركنات': 'corners',
+      'كنب': 'sofas',
+    };
+    const safeCategory = categoryFolderMap[category] || 'misc';
     const fileName = `${randomUUID()}.${fileExt}`;
     const filePath = `${safeCategory}/${fileName}`;
 

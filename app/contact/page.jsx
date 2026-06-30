@@ -40,7 +40,7 @@ const contacts = [
   {
     title: 'فيسبوك',
     description: 'تابع أعمالنا وتواصل معنا عبر صفحتنا على فيسبوك.',
-    href: 'https://facebook.com/almotakhases',
+    href: 'https://www.facebook.com/share/1CyT8kopiu/',
     buttonLabel: 'افتح فيسبوك',
     icon: <FacebookIcon />,
   },

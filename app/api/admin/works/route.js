@@ -91,7 +91,13 @@ export async function PUT(request) {
   if (replaceImage && replaceImage.base64 && replaceImage.contentType) {
     const oldPath = getStoragePathFromUrl(existingWork.image_url);
     const extension = replaceImage.contentType.split('/')[1] || 'jpg';
-    const newPath = `${category || existingWork.category}/${randomUUID()}.${extension}`;
+    const categoryFolderMap = {
+      'ستائر': 'curtains',
+      'ركنات': 'corners',
+      'كنب': 'sofas',
+    };
+    const targetCategory = category || existingWork.category;
+    const newPath = `${categoryFolderMap[targetCategory] || 'misc'}/${randomUUID()}.${extension}`;
     const base64Data = replaceImage.base64.includes(',')
       ? replaceImage.base64.split(',')[1]
       : replaceImage.base64;

@@ -38,22 +38,22 @@ export default function Footer() {
 
         <div className="space-y-3 text-sm text-primary-text md:justify-self-end md:text-left">
           <h3 className="font-display text-lg font-bold">تواصل معنا</h3>
-          <a className="flex items-center gap-2 hover:text-accent" href="https://wa.me/201000000000" target="_blank" rel="noreferrer">
+          <a className="flex items-center gap-2 hover:text-accent" href="https://wa.me/201112849517" target="_blank" rel="noreferrer">
             <WhatsappIcon />
-            <span>واتساب: +201000000000</span>
+            <span>واتساب: 01112849517</span>
           </a>
-          <a className="flex items-center gap-2 hover:text-accent" href="tel:+201000000000">
+          <a className="flex items-center gap-2 hover:text-accent" href="tel:01112849517">
             <PhoneIcon />
-            <span>تليفون: +201000000000</span>
+            <span>تليفون: 01112849517</span>
           </a>
           <a
             className="flex items-center gap-2 hover:text-accent"
-            href="https://facebook.com/almotakhases"
+            href="https://www.facebook.com/share/1CyT8kopiu/"
             target="_blank"
             rel="noreferrer"
           >
             <FacebookIcon />
-            <span>فيسبوك: /almotakhases</span>
+            <span>فيسبوك</span>
           </a>
           <p className="pt-3 text-primary-text/70">© 2026 المتخصص. جميع الحقوق محفوظة.</p>
         </div>

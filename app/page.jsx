@@ -65,12 +65,22 @@ export default function HomePage() {
               في المتخصص نهتم بالتفاصيل التي تصنع الفارق، من اختيار الخامات إلى تنفيذ
               الستائر والركنات والكنب بشكل يبرز جمال المساحة ويمنحها راحة تدوم.
             </p>
-            <Link
-              href="/gallery"
-              className="mt-8 inline-flex rounded-[4px] bg-accent px-7 py-3 text-base font-bold text-white hover:bg-accent-light hover:text-primary-text"
-            >
-              شوف أعمالنا
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/gallery"
+                className="inline-flex rounded-[4px] bg-accent px-7 py-3 text-base font-bold text-white hover:bg-accent-light hover:text-primary-text"
+              >
+                شوف أعمالنا
+              </Link>
+              <a
+                href="https://wa.me/201112849517"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex rounded-[4px] border border-white/50 px-7 py-3 text-base font-bold text-white hover:bg-white hover:text-primary-text"
+              >
+                واتساب: 01112849517
+              </a>
+            </div>
           </div>
         </div>
       </section>
